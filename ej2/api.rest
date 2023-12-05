@@ -1,0 +1,39 @@
+get http://localhost:3000/api/alumnos/
+
+###
+
+post http://localhost:3000/api/alumnos
+Content-Type: application/json
+
+{
+    "nombre": "David",
+    "edad": 20,
+    "domicilio": {
+        "calle": "Matellana",
+        "num": 36,
+        "localidad": "Jauja"
+    }
+}
+
+
+###
+get http://localhost:3000/api/alumnos/1
+
+###
+post http://localhost:3000/api/alumnos
+Content-Type: application/json
+
+{
+    "nombre": "David",
+    "edad": 20,
+    "domicilio": {
+        "calle": "Matellana",
+        "num": 36,
+        "localidad": "Puente Genil"
+    }
+}
+
+
+###
+delete http://localhost:3000/api/alumnos/5
+
